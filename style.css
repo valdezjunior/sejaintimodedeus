@@ -33,7 +33,7 @@ html {
 }
 
 
-/*=================== HEADER ===================*/
+/*=================== HEADER TITULO===================*/
 
 header {
     width: 100%;
@@ -41,6 +41,259 @@ header {
     position: relative;
     overflow: hidden;
 }
+
+.titulo-header{
+    font-size: 1.3rem;
+    padding: 1.5rem 0rem 1rem 2rem;
+    font-family: var(--font-secundary);
+    color: #fd7a00;
+    width: 25%;
+    animation: animacaoh1 2s 0.5s forwards;
+    opacity: 0;
+}
+
+@keyframes animacaoh1 {
+    0% {
+        transform: translateX(-10rem) rotateX(-30deg);
+    }
+
+    100% {
+        transform: translate(0) rotateX(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 930px){
+    .titulo-header {
+        margin-left: 2rem;
+    }
+}
+
+/*=================== HAMBURGUER ===================*/
+
+.hamburguer {
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    z-index: 100;
+    top: 1.5rem;
+    right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.show-menu .hamburguer {
+    right: 15rem;
+}
+
+.linha {
+    width: 100%;
+    height: .1rem;
+    background-color: white;
+    box-shadow: 0.08rem 0.1rem 1px rgba(0, 0, 0, 0.9);
+    transition: transform 1s;
+}
+
+.show-menu #linha1 {
+    width: 80%;
+    transform: rotate(45deg) translate(.3rem, .28rem);
+}
+
+.show-menu #linha2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #linha3 {
+    width: 80%;
+    transform: rotate(-45deg) translate(.2rem, -.43rem);
+}
+
+.hamburguer span {
+    position: absolute;
+    left: 3rem;
+    background-color: #fc4a1a;
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-action);
+    opacity: 0;
+}
+
+.hamburguer span::before {
+    content: "";
+    position: absolute;
+    border-right: .5rem solid #fc4a1a;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    border-top: .5rem solid transparent;
+    left: -1rem;
+}
+
+.show-menu .hamburguer:hover span {
+    opacity: 1;
+}
+
+@media screen and (min-width: 930px){
+    .hamburguer {
+        z-index: 0;
+        opacity: 0;
+    }
+}
+
+
+/*=================== BARRA LATERAL ===================*/
+
+.barra-lateral {
+    width: 20rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -20rem;
+    background-color: white;
+    z-index: 90;
+    transition: all 1s;
+}
+
+
+.show-menu .barra-lateral {
+    right: 0;
+}
+
+
+.menu {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: animacaoMenu 2s 0.7s forwards;
+    opacity: 0;
+}
+
+.menu-item {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.menu-link {
+    font-size: 2rem;
+    color: #fd7a00;
+    font-family: var(--font-action);
+    font-weight: 500;
+    transition: color 2s;
+}
+
+.menu-link:hover {
+    color: #fc4a1a;
+}
+
+@keyframes animacaoMenu {
+    0% {
+        transform: translateX(-10rem) rotateX(-30deg);
+    }
+
+    100% {
+        transform: translateX(0) rotateX(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .barra-lateral {
+        width: 75vw;
+        height: 5rem;
+        top: 0;
+        right: 0rem;
+        background-color: white;
+    }
+
+    .menu {
+        top: 2rem;
+        left: 15%;
+        transform: translate(0%, 0%);
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-item {
+        text-align: end;
+        margin-bottom: 0;
+        margin: 0 1.2rem 0 1.2rem;
+    }
+
+    .menu-link {
+        font-size: 1.3rem;
+        color: #fd7a00;
+        font-family: var(--font-action);
+        font-weight: 500;
+        transition: color 2s;
+    }
+}
+
+/*=================== REDES SOCIAIS ===================*/
+
+
+.redes-sociais {
+    position: absolute;
+    width: 100%;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    animation: animacaoRedeS 2s 0.9s forwards;
+    opacity: 0;
+}
+
+.redes-sociais i {
+    color: white;
+    background-color: #fd7a00;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 1s;
+}
+
+.redes-sociais i:hover {
+    background-color: #fc4a1a;
+}
+
+@keyframes animacaoRedeS {
+    0% {
+        transform: translateX(-10rem) rotateX(-30deg);
+    }
+
+    100% {
+        transform: translateX(0) rotateX(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .redes-sociais {
+        bottom: 1.5rem;
+        display: flex;
+        justify-content: right;
+    }
+
+    .redes-sociais i {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+
+/*=================== IMG e BANNER DO CABEÇALHO ===================*/
+
 
 .img-cabecalho {
     width: 100%;
@@ -50,7 +303,7 @@ header {
 }
 
 .img-cabecalho img {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     opacity: 0.6;
     animation: animacao 18s;
@@ -128,149 +381,4 @@ button a:hover {
         transform: translateY(0) rotateY(0);
         opacity: 1;
     }
-}
-
-
-/*=================== HAMBURGUER ===================*/
-
-.hamburguer {
-    position: fixed;
-    width: 2rem;
-    height: 2rem;
-    z-index: 100;
-    top: 3rem;
-    right: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    cursor: pointer;
-}
-
-.show-menu .hamburguer {
-    right: 15rem;
-}
-
-.linha {
-    width: 100%;
-    height: .1rem;
-    background-color: white;
-    box-shadow: 0.08rem 0.1rem 1px rgba(0, 0, 0, 0.9);
-    transition: transform 1s;
-}
-
-.show-menu #linha1 {
-    width: 80%;
-    transform: rotate(45deg) translate(.3rem, .28rem);
-}
-
-.show-menu #linha2 {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.show-menu #linha3 {
-    width: 80%;
-    transform: rotate(-45deg) translate(.2rem, -.43rem);
-}
-
-.hamburguer span {
-    position: absolute;
-    left: 3rem;
-    background-color: #fc4a1a;
-    color: white;
-    width: 6rem;
-    height: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--font-action);
-    opacity: 0;
-}
-
-.hamburguer span::before {
-    content: "";
-    position: absolute;
-    border-right: .5rem solid #fc4a1a;
-    border-left: .5rem solid transparent;
-    border-bottom: .5rem solid transparent;
-    border-top: .5rem solid transparent;
-    left: -1rem;
-}
-
-.show-menu .hamburguer:hover span {
-    opacity: 1;
-}
-
-
-
-/*=================== BARRA LATERAL ===================*/
-
-.barra-lateral {
-    width: 20rem;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: -20rem;
-    background-color: white;
-    z-index: 90;
-    transition: all 1s;
-}
-
-
-.show-menu .barra-lateral {
-    right: 0;
-}
-
-
-.menu {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.menu-item {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-.menu-link {
-    font-size: 2rem;
-    color: #fd7a00;
-    font-family: var(--font-action);
-    font-weight: 500;
-    transition: color 2s;
-}
-
-.menu-link:hover {
-    color: #fc4a1a;
-}
-
-
-/*=================== REDES SOCIAIS ===================*/
-
-
-.redes-sociais {
-    position: absolute;
-    width: 100%;
-    bottom: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.redes-sociais i {
-    color: white;
-    background-color: #fd7a00;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 1.9rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: background-color 1s;
-}
-
-.redes-sociais i:hover {
-    background-color: #fc4a1a;
 }
