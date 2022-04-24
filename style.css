@@ -254,6 +254,12 @@ button a:hover {
         z-index: 0;
         opacity: 0;
     }
+
+    @keyframes animacaoH {
+        100% {
+            opacity: 0;
+        }
+    }
 }
 
 
