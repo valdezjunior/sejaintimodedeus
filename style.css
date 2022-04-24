@@ -51,7 +51,8 @@ header {
     text-shadow: .1rem .1rem .15rem rgba(0, 0, 0, 0.6);
     width: 25%;
     animation: animacaoh1 2s 0.5s forwards;
-    opacity: 1;
+    opacity: 0;
+    z-index: 1;
 
 }
 
@@ -178,6 +179,8 @@ button a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    animation: animacaoH 2s 0.9s forwards;
+    opacity: 0;
 }
 
 .show-menu .hamburguer {
@@ -233,6 +236,17 @@ button a:hover {
 
 .show-menu .hamburguer:hover span {
     opacity: 1;
+}
+
+@keyframes animacaoH {
+    0% {
+        transform: translateZ(-10rem) rotateZ(-180deg);
+    }
+
+    100% {
+        transform: translateZ(0) rotateZ(0);
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width: 930px){
