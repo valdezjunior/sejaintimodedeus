@@ -33,6 +33,10 @@ html {
 }
 
 
+body {
+    background-color: white;
+}
+
 /*=================== HEADER TITULO===================*/
 
 header {
@@ -43,7 +47,7 @@ header {
 }
 
 .titulo-header{
-    position: fixed;
+    position: absolute;
     font-size: 1.3rem;
     padding: 1.5rem 0rem 1rem 2rem;
     font-family: var(--font-secundary);
@@ -71,6 +75,7 @@ header {
     .titulo-header {
         margin-left: 2rem;
         left: 15%;
+        position: fixed;
     }
 }
 
@@ -450,17 +455,57 @@ button a:hover {
 /*=================== PALAVRA DE DEUS ===================*/
 
 .section-palavra {
-    max-width: 1500px;
     margin: 0 auto;
-    height: 100vh;
+    height: 90vh;
 }
 
 .section-header {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+    text-align: center;
+    margin-top: 1rem;
     font-size: 1.5rem;
     font-family: var(--font-primary);
     font-weight: lighter;
+    color: #fd7a00;
+}
+
+.palavra-c {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.palavra-texto {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    font-family: var(--font-secundary);
+    flex: 6 1 160px;
+    text-align: center;
+}
+
+.section-subtitulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    font-family: var(--font-secundary);
+    color: #fd7a00;
+}
+
+.palavra-texto2 {
+    flex: 6 1 160px;
+    padding: 0 3rem 0 4rem;
+    margin-top: 1.5rem;
+    letter-spacing: .5px;
+    line-height: 1.5rem;
+    font-family: var(--font-secundary);
+    font-size: 1.2rem;
+    
+}
+
+.palavra-img img {
+    object-fit: cover;
+    max-width: 100%;
+    flex: 1 1 330px;
 }
 
