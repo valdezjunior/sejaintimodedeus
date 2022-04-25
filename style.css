@@ -43,13 +43,13 @@ header {
 }
 
 .titulo-header{
-    position: absolute;
+    position: fixed;
     font-size: 1.3rem;
     padding: 1.5rem 0rem 1rem 2rem;
     font-family: var(--font-secundary);
     color: #fd7a00;
     text-shadow: .1rem .1rem .15rem rgba(0, 0, 0, 0.6);
-    width: 25%;
+    width: 15vw;
     animation: animacaoh1 2s 0.5s forwards;
     opacity: 0;
     z-index: 1;
@@ -62,7 +62,7 @@ header {
     }
 
     100% {
-        transform: translate(0) rotateX(0);
+        transform: translateX(0) rotateX(0);
         opacity: 1;
     }
 }
@@ -70,6 +70,7 @@ header {
 @media screen and (min-width: 930px){
     .titulo-header {
         margin-left: 2rem;
+        left: 15%;
     }
 }
 
@@ -310,10 +311,10 @@ button a:hover {
 
 @media screen and (min-width: 930px) {
     .barra-lateral {
-        width: 75vw;
+        width: 55vw;
         height: 4rem;
         top: 0rem;
-        right: 0rem;
+        left: 30%;
         background-color: transparent;
     }
 
@@ -445,4 +446,21 @@ button a:hover {
     }
 }
 
+
+/*=================== PALAVRA DE DEUS ===================*/
+
+.section-palavra {
+    max-width: 1500px;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.section-header {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-family: var(--font-primary);
+    font-weight: lighter;
+}
 
