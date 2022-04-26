@@ -184,7 +184,7 @@ button a:hover {
     width: 2rem;
     height: 2rem;
     z-index: 100;
-    top: 1.5rem;
+    top: 3rem;
     right: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -310,7 +310,7 @@ button a:hover {
     color: #fd7a00;
     font-family: var(--font-action);
     font-weight: 500;
-    transition: color 1s;
+    transition: color 1.5s;
 }
 
 .menu-link:hover {
@@ -323,14 +323,14 @@ button a:hover {
         width: 80vw;
         height: 4rem;
         top: 0rem;
-        left: 21%;
+        left: 26%;
         background-color: transparent;
     }
 
 
     .menu {
         top: 2rem;
-        left: 15%;
+        left: 3%;
         transform: translate(0%, 0%);
         text-shadow: .1rem .1rem .15rem rgba(0, 0, 0, 0.6);
         display: flex;
@@ -341,13 +341,17 @@ button a:hover {
 
     .menu-item {
         margin-bottom: .5rem;
-        margin: 0 1rem 0 1rem;
+        margin: 0 .5rem 0 .5rem;
     }
 
     .menu-link {
         font-size: 1.3rem;
         color: #fd7a00;
-        font-weight: 900;
+        font-weight: 500;
+    }
+
+    .menu-link:hover {
+        font-weight: bold;
     }
 
     @keyframes animacaoMenu {
@@ -367,14 +371,14 @@ button a:hover {
         width: 80vw;
         height: 4rem;
         top: 0rem;
-        left: 25%;
+        left: 27%;
         background-color: transparent;
     }
 
 
     .menu {
         top: 2rem;
-        left: 15%;
+        left: 7%;
         transform: translate(0%, 0%);
         text-shadow: 1.2px 1.2px 2px rgba(0, 0, 0, 0.6);
         display: flex;
@@ -385,13 +389,17 @@ button a:hover {
 
     .menu-item {
         margin-bottom: .5rem;
-        margin: 0 1rem 0 1rem;
+        margin: 0 .5rem 0 .5rem;
     }
 
     .menu-link {
         font-size: 1.3rem;
         color: #fd7a00;
-        font-weight: 900;
+        font-weight: 500;
+    }
+
+    .menu-link:hover {
+        font-weight: bold;
     }
 
     @keyframes animacaoMenu {
@@ -439,7 +447,7 @@ button a:hover {
 @media screen and (min-width: 930px) and (max-width: 1200px) {
     .redes-sociais {
         width: 20%;
-        left: 75%;
+        left: 72%;
         bottom: .6rem;
         display: flex;
         justify-content: right;
@@ -594,11 +602,107 @@ strong {
 
 
 .jes-texto {
-    max-width: 60%;
+    max-width: 75%;
     margin: auto;
     line-height: 1.5rem;
     letter-spacing: .5px;
     font-family: var(--font-secundary);
     font-size: 1.4rem;
 }
+
+.jes-bloco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.jes-card {
+    width: 15rem;
+    height: 22rem;
+    position: relative;
+    margin: 1rem;
+}
+
+.jes-card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    background-color: #262626;
+}
+
+.jes-card-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .8;
+    transition: opacity .5s;
+}
+
+.jes-card:hover .jes-card-img img {
+    opacity: .5;
+}
+
+.jes-card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem 1rem 2.5rem 1rem;
+    text-shadow: .2rem .3rem .3rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.3s;
+}
+
+.jes-card-info h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: var(--font-primary);
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.jes-card-info p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--font-secundary);
+    color: rgba(255, 255, 255, 0.925);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background: #fc4a1a;
+    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);
+    background: linear-gradient(to left, #f7b733, #fc4a1a);
+    border: none;
+    border-radius: 10px;
+    padding: .8rem 1.3rem;
+    font-family: var(--font-action);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .75rem;
+    color: white;
+    box-shadow: 0 0.1rem .8rem rgba(0, 0, 0, 0.8);
+    text-shadow: .1rem .1rem .15rem rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.jes-card-info button {
+    width: 8rem;
+    height: 2.5rem;
+}
+
+.jes-card-info button:hover {
+    color: #dd9848;
+    transition: all 0.7s;
+}
+
+.jes-card:hover .jes-card-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
 
