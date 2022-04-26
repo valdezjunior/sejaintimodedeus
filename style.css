@@ -49,15 +49,21 @@ header {
 .titulo-header{
     position: absolute;
     font-size: 1.3rem;
-    padding: 1.5rem 0rem 1rem 2rem;
+    padding: 1.5rem 0.1rem 1rem 2rem;
     font-family: var(--font-secundary);
     color: #fd7a00;
     text-shadow: .1rem .1rem .15rem rgba(0, 0, 0, 0.6);
-    width: 15vw;
+    width: 20vw;
     animation: animacaoh1 2s 0.5s forwards;
     opacity: 0;
     z-index: 1;
+    cursor: pointer;
+    transition: all 1s;
+}
 
+.titulo-header:hover {
+    color: #fc4a1a;
+    letter-spacing: 1px;
 }
 
 @keyframes animacaoh1 {
@@ -73,8 +79,7 @@ header {
 
 @media screen and (min-width: 930px){
     .titulo-header {
-        margin-left: 2rem;
-        left: 15%;
+        left: 0%;
         position: fixed;
     }
 }
@@ -305,23 +310,23 @@ button a:hover {
     color: #fd7a00;
     font-family: var(--font-action);
     font-weight: 500;
-    transition: color 2s;
+    transition: color 1s;
 }
 
 .menu-link:hover {
     color: #fc4a1a;
-    font-weight: 900;
 }
 
 
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 930px) and (max-width: 1200px){
     .barra-lateral {
-        width: 55vw;
+        width: 80vw;
         height: 4rem;
         top: 0rem;
-        left: 30%;
+        left: 21%;
         background-color: transparent;
     }
+
 
     .menu {
         top: 2rem;
@@ -342,7 +347,51 @@ button a:hover {
     .menu-link {
         font-size: 1.3rem;
         color: #fd7a00;
-        font-weight: 500;
+        font-weight: 900;
+    }
+
+    @keyframes animacaoMenu {
+        0% {
+            transform: translateX(-10rem) rotateX(-30deg);
+        }
+    
+        100% {
+            transform: translateX(0) rotateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 1201px){
+    .barra-lateral {
+        width: 80vw;
+        height: 4rem;
+        top: 0rem;
+        left: 25%;
+        background-color: transparent;
+    }
+
+
+    .menu {
+        top: 2rem;
+        left: 15%;
+        transform: translate(0%, 0%);
+        text-shadow: 1.2px 1.2px 2px rgba(0, 0, 0, 0.6);
+        display: flex;
+        flex-direction: row;
+        animation: animacaoMenu 2s 0.7s forwards;
+        opacity: 0;
+    }
+
+    .menu-item {
+        margin-bottom: .5rem;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .menu-link {
+        font-size: 1.3rem;
+        color: #fd7a00;
+        font-weight: 900;
     }
 
     @keyframes animacaoMenu {
@@ -387,10 +436,10 @@ button a:hover {
     transition: all 2s;
 }
 
-@media screen and (min-width: 930px) and (max-width: 1250px) {
+@media screen and (min-width: 930px) and (max-width: 1200px) {
     .redes-sociais {
         width: 20%;
-        left: 80%;
+        left: 75%;
         bottom: .6rem;
         display: flex;
         justify-content: right;
@@ -417,10 +466,10 @@ button a:hover {
     }
 }
 
-@media screen and (min-width: 1251px) {
+@media screen and (min-width: 1201px) {
     .redes-sociais {
         width: 20%;
-        left: 80%;
+        left: 72%;
         bottom: .3rem;
         display: flex;
         justify-content: right;
@@ -456,26 +505,25 @@ button a:hover {
 
 .section-palavra {
     margin: 0 auto;
-    height: 90vh;
 }
 
 .section-header {
     text-align: center;
-    margin-top: 1rem;
     font-size: 1.5rem;
     font-family: var(--font-primary);
     font-weight: lighter;
     color: #fd7a00;
+    text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, 0.5);
 }
 
-.palavra-c {
+.palavra-cont {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
 .palavra-texto {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-top: 2.5rem;
     font-family: var(--font-secundary);
     flex: 6 1 160px;
@@ -490,22 +538,67 @@ button a:hover {
     font-size: 1.7rem;
     font-family: var(--font-secundary);
     color: #fd7a00;
+    text-shadow: 1.4px 1.4px .15rem rgba(0, 0, 0, 0.3);
 }
 
 .palavra-texto2 {
+    min-width: 18rem;
+    text-indent: 30px;
     flex: 6 1 160px;
-    padding: 0 3rem 0 4rem;
+    padding: 0 3rem 0 3rem;
     margin-top: 1.5rem;
     letter-spacing: .5px;
     line-height: 1.5rem;
     font-family: var(--font-secundary);
-    font-size: 1.2rem;
-    
+    font-size: 1.4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+strong {
+    font-weight: bold;
+    color: #fd7a00;
+    text-shadow: 1.4px 1.4px .1rem rgba(0, 0, 0, 0.2);
 }
 
 .palavra-img img {
     object-fit: cover;
     max-width: 100%;
     flex: 1 1 330px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 620px) and (max-width: 1012px) {
+    .palavra-img {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .section-header h1 {
+        padding-top: 4rem;
+    }
+}
+
+/*=================== JESUS ===================*/
+
+
+.section-jes {
+    width: 100%;
+}
+
+.section-header-2 {
+    margin-bottom: 2rem;
+}
+
+
+.jes-texto {
+    max-width: 60%;
+    margin: auto;
+    line-height: 1.5rem;
+    letter-spacing: .5px;
+    font-family: var(--font-secundary);
+    font-size: 1.4rem;
 }
 
