@@ -550,7 +550,7 @@ button a:hover {
 }
 
 .palavra-texto2 {
-    min-width: 18rem;
+    min-width: 4rem;
     text-indent: 30px;
     flex: 6 1 160px;
     padding: 0 3rem 0 3rem;
@@ -722,7 +722,9 @@ strong {
 
 table {
     border-collapse: collapse;
-    width: 900px;
+    height: 100vh;
+    width: 1000px;
+    min-width: 600px;
     background-color: white;
     box-shadow: .1rem .1rem .5rem rgba(0, 0, 0, 0.6);
     margin-bottom: .4rem;
@@ -769,12 +771,11 @@ td, th {
     td, th {
         padding: 0px 2px 0px 2px;
     }
-
-    
 }
 
 
 .section-vers {
+    margin-top: 5rem;
     height: 100vh;
 }
 
