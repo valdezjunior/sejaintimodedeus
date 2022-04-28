@@ -722,7 +722,7 @@ strong {
 
 table {
     border-collapse: collapse;
-    height: 100vh;
+    height: 75vh;
     width: 1000px;
     min-width: 600px;
     background-color: white;
@@ -754,7 +754,7 @@ td, th {
 @media screen and (min-width: 930px) {
 
     .section-plano {
-        height: 790px;
+        height: 800px;
         margin-top: 0;
     }
 
@@ -775,7 +775,6 @@ td, th {
 
 
 .section-vers {
-    margin-top: 5rem;
     height: 100vh;
 }
 
