@@ -329,7 +329,7 @@ button a:hover {
 
 
     .menu {
-        top: 2rem;
+        top: 1.7rem;
         left: 3%;
         transform: translate(0%, 0%);
         text-shadow: .1rem .1rem .15rem rgba(0, 0, 0, 0.6);
@@ -377,7 +377,7 @@ button a:hover {
 
 
     .menu {
-        top: 2rem;
+        top: 1.7rem;
         left: 7%;
         transform: translate(0%, 0%);
         text-shadow: 1.2px 1.2px 2px rgba(0, 0, 0, 0.6);
@@ -585,7 +585,7 @@ strong {
 
 @media screen and (min-width: 930px) {
     .section-header h1 {
-        padding-top: 4rem;
+        padding-top: 3rem;
     }
 }
 
@@ -706,9 +706,10 @@ strong {
 
 .section-plano {
     margin-top: 2rem;
-    background: rgb(107, 52, 52);
-    background: -webkit-linear-gradient(to left, rgb(119, 63, 63), #fc4a1a);
-    background: linear-gradient(to left, #ee8207, rgb(88, 35, 35));
+    height: 100vh;
+    background: rgb(114, 59, 59);
+    background: -webkit-linear-gradient(to left, #c0731c, rgb(114, 59, 59));
+    background: linear-gradient(to left, #c0731c, rgb(114, 59, 59));
 }
 
 .section-header-plano {
@@ -717,7 +718,7 @@ strong {
 
 #container {
     overflow-x: auto;
-    padding-bottom: 2rem;
+    padding: 0 14px 0 14px;
 }
 
 
@@ -725,20 +726,20 @@ table {
     border-collapse: collapse;
     width: 1000px;
     background-color: white;
-    margin: 0 3rem 0 3rem;
+    box-shadow: .1rem .1rem .5rem rgba(0, 0, 0, 0.6);
+    margin-bottom: .4rem;
 }
 
 col.impar {
-    background-color: rgba(233, 217, 71, 0.74);
+    background-color: rgba(211, 199, 94, 0.644);
 }
 
 col.par {
-    background-color: #f3a143ce;
+    background-color: #e4a55ebb;
 }
 
 caption {
     font-family: var(--font-secundary);
-    padding: 10px;
     font-size: 1.8rem;
     font-weight: bold;
     color: white;
@@ -752,23 +753,22 @@ td, th {
 
 @media screen and (min-width: 930px) {
 
-    /*.section-plano {
-        height: 814px;
+    .section-plano {
+        height: 790px;
         margin-top: 0;
-        background: rgb(107, 52, 52);
-        background: -webkit-linear-gradient(to left, rgb(119, 63, 63), #fc4a1a);
-        background: linear-gradient(to left, #ee8207, rgb(88, 35, 35));
     }
 
     .section-header-plano {
         color: white;
-    }*/
+    }
 
     #container {
         display: flex;
         justify-content: center;
         padding-bottom: 2rem;
     }
+
+    
 }
 
 
