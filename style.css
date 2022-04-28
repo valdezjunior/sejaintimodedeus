@@ -706,7 +706,6 @@ strong {
 
 .section-plano {
     margin-top: 2rem;
-    height: 100vh;
     background: rgb(114, 59, 59);
     background: -webkit-linear-gradient(to left, #c0731c, rgb(114, 59, 59));
     background: linear-gradient(to left, #c0731c, rgb(114, 59, 59));
@@ -721,10 +720,9 @@ strong {
     padding: 0 14px 0 14px;
 }
 
-
 table {
     border-collapse: collapse;
-    width: 1000px;
+    width: 900px;
     background-color: white;
     box-shadow: .1rem .1rem .5rem rgba(0, 0, 0, 0.6);
     margin-bottom: .4rem;
@@ -766,6 +764,10 @@ td, th {
         display: flex;
         justify-content: center;
         padding-bottom: 2rem;
+    }
+
+    td, th {
+        padding: 0px 2px 0px 2px;
     }
 
     
