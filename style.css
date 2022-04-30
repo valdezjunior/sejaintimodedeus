@@ -774,8 +774,100 @@ td, th {
 }
 
 
-.section-vers {
+.section-orar {
+    width: 100%;
     height: 100vh;
+    background: #daf1f1;
+    background: -webkit-linear-gradient(to top, #e2e1e1, #daf1f1);
+    background: linear-gradient(to top, #e2e1e1, #daf1f1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedido-oracao {
+    width: 70%;
+    height: 35rem;
+    display: flex;
+    box-shadow: .5rem 1rem 3rem rgba(0, 0, 0, 0.4);
+    border-radius: 1.1rem;
+}
+
+.pedido-left {
+    width: 35%;
+    background: 
+    linear-gradient(rgba(15,15,15, 0.5), rgba(22,22,22, 0.2)),
+    url(imagens/pedido.jpg);
+    background-size: cover;
+    border-top-left-radius: 1.1rem;
+    border-bottom-left-radius: 1.1rem;
+}
+
+.pedido-right {
+    width: 65%;
+    padding: 2rem 3rem 3rem 3rem;
+    background: #c04422;
+    background: -webkit-linear-gradient(to bottom, #ebd34d, #c04422);
+    background: linear-gradient(to bottom, #ebd34d, #c04422);
+    border-top-right-radius: 1.1rem;
+    border-bottom-right-radius: 1.1rem;
+}
+
+.pedido-right h1 {
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    font-weight: lighter;
+    color: rgb(153, 240, 241);
+    margin-bottom: 2rem;
+}
+
+.pedido-right form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-group input {
+    font-style: italic;
+    font-size: 1.2rem;
+    width: 25rem;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-dados {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    border-bottom: 2px dashed #7a7676;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+}
+
+.input-group textarea {
+    padding-top: 1rem;
+    max-width: 25rem;
+    min-width: 20rem;
+    max-height: 6.5rem;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+.label-dados {
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
 }
 
 
