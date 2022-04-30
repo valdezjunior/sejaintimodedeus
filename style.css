@@ -181,10 +181,10 @@ button a:hover {
 
 .hamburguer {
     position: fixed;
-    width: 2rem;
-    height: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
     z-index: 100;
-    top: 3rem;
+    top: 2.2rem;
     right: 2.5rem;
     display: flex;
     flex-direction: column;
@@ -208,7 +208,7 @@ button a:hover {
 
 .show-menu #linha1 {
     width: 80%;
-    transform: rotate(45deg) translate(.3rem, .28rem);
+    transform: rotate(45deg) translate(.2rem, .2rem);
 }
 
 .show-menu #linha2 {
@@ -278,22 +278,6 @@ button a:hover {
 }
 
 
-@media screen and (max-width: 850px) and (min-width: 551px) {
-    .hamburguer {
-        width: 1.7rem;
-        height: 1.7rem;
-    }
-
-    .show-menu #linha1 {
-        width: 80%;
-        transform: rotate(45deg) translate(.2rem, .2rem); 
-    }
-
-    .show-menu .hamburguer {
-        right: 11rem;
-    }
-}
-
 @media screen and (min-width: 930px){
     .hamburguer {
         z-index: 0;
@@ -312,7 +296,8 @@ button a:hover {
 
 .barra-lateral {
     width: 15rem;
-    height: 100vh;
+    height: 70vh;
+    border-bottom-left-radius: 10px;
     position: fixed;
     top: 0;
     right: -15rem;
@@ -336,11 +321,11 @@ button a:hover {
 
 .menu-item {
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 .menu-link {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #fd7a00;
     font-family: var(--font-action);
     font-weight: 500;
@@ -478,8 +463,8 @@ button a:hover {
 .redes-sociais i {
     color: #fc4a1a;
     background-color: transparent;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.6rem;
+    height: 2.6rem;
     font-size: 1.9rem;
     display: flex;
     justify-content: center;
