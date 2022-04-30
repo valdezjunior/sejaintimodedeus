@@ -773,6 +773,8 @@ td, th {
     }
 }
 
+/*=================== ORAÇÃO ===================*/
+
 
 .section-orar {
     width: 100%;
@@ -789,7 +791,7 @@ td, th {
     width: 70%;
     height: 35rem;
     display: flex;
-    box-shadow: .5rem 1rem 3rem rgba(0, 0, 0, 0.4);
+    box-shadow: .1rem .4rem 2rem rgba(0, 0, 0, 0.4);
     border-radius: 1.1rem;
 }
 
@@ -832,7 +834,7 @@ td, th {
 
 .input-group input {
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     width: 25rem;
 }
 
@@ -858,7 +860,8 @@ td, th {
     min-width: 20rem;
     max-height: 6.5rem;
     font-style: italic;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .label-dados {
@@ -868,6 +871,68 @@ td, th {
     font-weight: 600;
     font-family: var(--font-secundary);
     text-transform: uppercase;
+}
+
+input::placeholder {
+    color: rgba(153, 240, 241, 0.836);
+}
+
+textarea::placeholder {
+    color: rgb(153, 240, 241);
+}
+
+.btn-submit {
+    font-size: 1.1rem;
+    width: 60%;
+    height: 3rem;
+    letter-spacing: .2rem;
+    margin-top: 2rem;
+    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.4);
+}
+
+.btn-submit:hover {
+    color: #dd9848;
+    transition: all 0.5s;
+}
+
+@media screen and (max-width: 750px) {
+    .pedido-oracao {
+        width: 90%;
+    }
+
+    .input-group input {
+        width: 14rem;
+        font-size: 1.1rem;
+    }
+
+    .input-group textarea {
+        min-width: 13rem;
+        max-width: 14rem;
+        font-size: 1.1rem;
+    }
+
+    .pedido-left {
+        width: 35%;
+    }
+
+    .pedido-right {
+        width: 65%;
+    }
+
+    .pedido-right h1 {
+        line-height: 3.2rem;
+        font-size: 2.5rem;
+    }
+
+    .btn-submit {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 751px) and (max-width: 1050px) {
+    .pedido-oracao {
+        width: 90%;
+    }
 }
 
 
