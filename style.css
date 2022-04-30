@@ -260,6 +260,40 @@ button a:hover {
     }
 }
 
+@media screen and (max-width: 550px) {
+    .hamburguer {
+        width: 1.7rem;
+        height: 1.7rem;
+        top: 2rem;
+    }
+
+    .show-menu .hamburguer {
+        right: 8rem;
+    }
+
+    .show-menu #linha1 {
+        width: 80%;
+        transform: rotate(45deg) translate(.2rem, .2rem); 
+    }
+}
+
+
+@media screen and (max-width: 850px) and (min-width: 551px) {
+    .hamburguer {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+
+    .show-menu #linha1 {
+        width: 80%;
+        transform: rotate(45deg) translate(.2rem, .2rem); 
+    }
+
+    .show-menu .hamburguer {
+        right: 11rem;
+    }
+}
+
 @media screen and (min-width: 930px){
     .hamburguer {
         z-index: 0;
@@ -315,6 +349,22 @@ button a:hover {
 
 .menu-link:hover {
     color: #fc4a1a;
+}
+
+@media screen and (max-width: 550px) {
+    .barra-lateral {
+        width: 12rem;
+        right: -12rem;
+        height: 70vh;
+    }
+
+    .menu-item {
+        margin-bottom: .5rem;
+    }
+
+    .menu-link {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -442,6 +492,14 @@ button a:hover {
     color: white;
     background-color: #fc4a1a;
     transition: all 2s;
+}
+
+@media screen and (max-width: 550px) {
+    .redes-sociais i {
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 1.9rem;
+    }
 }
 
 @media screen and (min-width: 930px) and (max-width: 1200px) {
@@ -912,11 +970,11 @@ textarea::placeholder {
     }
 
     .pedido-left {
-        width: 35%;
+        width: 40%;
     }
 
     .pedido-right {
-        width: 65%;
+        width: 60%;
     }
 
     .pedido-right h1 {
