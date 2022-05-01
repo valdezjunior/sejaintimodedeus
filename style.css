@@ -329,11 +329,12 @@ button a:hover {
     color: #fd7a00;
     font-family: var(--font-action);
     font-weight: 500;
-    transition: color 1.5s;
+    transition: color .7s;
 }
 
 .menu-link:hover {
     color: #fc4a1a;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 550px) {
@@ -385,10 +386,6 @@ button a:hover {
         font-weight: 500;
     }
 
-    .menu-link:hover {
-        font-weight: bold;
-    }
-
     @keyframes animacaoMenu {
         0% {
             transform: translateX(-10rem) rotateX(-30deg);
@@ -433,10 +430,6 @@ button a:hover {
         font-weight: 500;
     }
 
-    .menu-link:hover {
-        font-weight: bold;
-    }
-
     @keyframes animacaoMenu {
         0% {
             transform: translateX(-10rem) rotateX(-30deg);
@@ -463,8 +456,8 @@ button a:hover {
 .redes-sociais i {
     color: #fc4a1a;
     background-color: transparent;
-    width: 2.6rem;
-    height: 2.6rem;
+    width: 2.5rem;
+    height: 2.5rem;
     font-size: 1.9rem;
     display: flex;
     justify-content: center;
@@ -529,6 +522,7 @@ button a:hover {
     }
 
     .redes-sociais i {
+
         font-size: 1.9rem;
         margin-right: 3rem;
     }
@@ -663,7 +657,9 @@ strong {
     width: 15rem;
     height: 22rem;
     position: relative;
-    margin: 1rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0.1rem 0.1rem .5rem rgba(0, 0, 0, 0.6);
 }
 
 .jes-card-img {
