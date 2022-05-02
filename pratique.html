@@ -5,8 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viva intensamente</title>
+    <link rel="stylesheet" href="style-medite.css">
+
+    <style>
+        body {
+            background-color: rgb(243, 227, 227);
+        }
+
+        .main-titulo{
+            color: darkred;
+        }
+
+        .main-titulo::before {
+        content: "";
+	    display: inline-block;
+	    width: 20px;
+	    height: 20px;
+	    margin-right: 15px;
+}
+
+article:nth-of-type(3n+1) .main-titulo::before {
+    background-color: darkred;
+}
+    </style>
+
 </head>
 <body>
-    
+    <div class="container">
+
+        <header class="cabecalho">
+
+            <div class="img-cabecalho">
+
+                <img src="imagens/evangelizando1.jpeg" alt="Imagem Biblia">
+
+            </div>
+
+            <div class="banner">
+                <h1>Mateus 7:24</h1>
+                <p>Todo aquele, pois, que escuta estas minhas palavras e as pratica, assemelhá-lo-ei ao homem prudente, que edificou a sua casa sobre a rocha.</p>
+            </div>
+
+            
+        </header>
+
+        <main>
+            <article>
+                <h1 class="main-titulo">A oração é o segredo do Cristão.</h1>
+            </article>
+        </main>
+
+    </div>
 </body>
 </html>

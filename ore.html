@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orai sem cessar</title>
     <link rel="stylesheet" href="style-medite.css">
+
+    <style>
+        body {
+            background-color: rgb(220, 237, 247);
+        }
+
+        .main-titulo{
+            color: darkblue;
+        }
+
+        .main-titulo::before {
+        content: "";
+	    display: inline-block;
+	    width: 20px;
+	    height: 20px;
+	    margin-right: 15px;
+}
+
+article:nth-of-type(3n+1) .main-titulo::before {
+    background-color: darkblue;
+}
+    </style>
+
 </head>
 <body>
     <div class="container">
@@ -20,7 +43,7 @@
 
             <div class="banner">
                 <h1>Tiago 5:16</h1>
-                <p>Confessai as vossa culpas uns aos outros e orai uns pelos outros, para que sareis; a oração feita por um justo pode muito em seus efeitos</p>
+                <p>Confessai as vossa culpas uns aos outros e orai uns pelos outros, para que sareis; a oração feita por um justo pode muito em seus efeitos.</p>
             </div>
 
             
@@ -28,7 +51,7 @@
 
         <main>
             <article>
-                <h1>A oração é o segredo do Cristão.</h1>
+                <h1 class="main-titulo">A oração é o segredo do Cristão.</h1>
             </article>
         </main>
 

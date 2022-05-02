@@ -7,6 +7,28 @@
     <title>Medite na palavra do Senhor</title>
     <link rel="stylesheet" href="style-medite.css">
 
+    <style>
+        body {
+            background-color: rgb(225, 243, 225);
+        }
+
+        .main-titulo {
+            color: darkgreen;
+        }
+
+        .main-titulo::before {
+        content: "";
+	    display: inline-block;
+	    width: 20px;
+	    height: 20px;
+	    margin-right: 15px;
+}
+
+article:nth-of-type(3n+1) .main-titulo::before {
+    background-color: darkgreen;
+}
+    </style>
+
 </head>
 
 <body>
@@ -30,7 +52,7 @@
 
         <main>
             <article>
-                <h1>Porque precisamos ter a pratica da leitura em nossa vida?</h1>
+                <h1 class="main-titulo">Porque precisamos ter a pratica da leitura em nossa vida?</h1>
             </article>
         </main>
 

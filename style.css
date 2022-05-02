@@ -162,7 +162,7 @@ button a {
 }
 
 button a:hover {
-    color: #dd9848;
+    letter-spacing: 1px;
     transition: all 0.7s;
 }
 
@@ -694,11 +694,23 @@ strong {
 
 .jes-card-info h2 {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: bold;
     font-family: var(--font-primary);
     color: white;
     text-align: center;
     margin-bottom: 1rem;
+}
+
+.jes-card-info .jes-titulo1 {
+    color: rgb(43, 180, 43);
+}
+
+.jes-card-info .jes-titulo2 {
+    color: rgb(90, 124, 236);
+}
+
+.jes-card-info .jes-titulo3 {
+    color: rgb(207, 27, 27);
 }
 
 .jes-card-info p {
@@ -710,9 +722,6 @@ strong {
 }
 
 .btn {
-    background: #fc4a1a;
-    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);
-    background: linear-gradient(to left, #f7b733, #fc4a1a);
     border: none;
     border-radius: 10px;
     padding: .8rem 1.3rem;
@@ -726,15 +735,30 @@ strong {
     cursor: pointer;
 }
 
+.btn1 {
+    background: #52c234;
+    background: -webkit-linear-gradient(to right, #061700, #52c234);
+    background: linear-gradient(to right, #061700, #52c234);
+}
+
+.btn2 {
+    background: #373B44;
+    background: -webkit-linear-gradient(to left, #4286f4, #373B44);
+    background: linear-gradient(to left, #4286f4, #373B44);
+}
+
+.btn3 {
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+    background: linear-gradient(to right, #1F1C18, #8E0E00);
+}
+
 .jes-card-info button {
     width: 8rem;
     height: 2.5rem;
 }
 
-.jes-card-info button:hover {
-    color: #dd9848;
-    transition: all 0.7s;
-}
+
 
 .jes-card:hover .jes-card-info {
     opacity: 1;
