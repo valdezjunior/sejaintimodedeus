@@ -733,6 +733,9 @@ strong {
     box-shadow: 0 0.1rem .8rem rgba(0, 0, 0, 0.8);
     text-shadow: .1rem .1rem .15rem rgba(0, 0, 0, 0.6);
     cursor: pointer;
+    background: #fc4a1a;
+    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);
+    background: linear-gradient(to left, #f7b733, #fc4a1a);
 }
 
 .btn1 {
@@ -999,5 +1002,7 @@ textarea::placeholder {
         width: 90%;
     }
 }
+
+
 
 

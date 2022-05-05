@@ -44,6 +44,8 @@ header {
     position: relative;
     overflow: hidden;
     box-shadow: .3rem .3rem 1rem rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 
@@ -55,7 +57,8 @@ header {
     height: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.8);
-    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .img-cabecalho img {
@@ -63,7 +66,6 @@ header {
     height: 100%;
     opacity: 0.6;
     animation: animacao 12s;
-    
 }
 
 @keyframes animacao {
@@ -146,18 +148,32 @@ main {
     max-width: 890px;
     background-color: rgba(255, 255, 255, 0.822);
     margin: auto;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    /*margin-bottom: 30px;*/
+    border-radius: 10px;
+    margin-bottom: 30px;
 }
+
+
 
 main h1 {
     color: #fd8700;
     font-family: var(--font-primary);
     font-weight: lighter;
     font-size: 1.8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    padding-top: 45px;
+}
+
+main p {
+    margin-bottom: 3rem;
+    font-family: var(--font-secundary);
+    font-size: 1.4rem;
+    text-indent: 30px;
+    letter-spacing: .5px;
+    line-height: 2rem;
 }
 
 
