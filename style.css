@@ -639,6 +639,7 @@ strong {
 
 
 .jes-texto {
+    position: relative;
     max-width: 75%;
     margin: auto;
     line-height: 1.5rem;
@@ -680,6 +681,15 @@ strong {
 
 .jes-card:hover .jes-card-img img {
     opacity: .5;
+}
+
+.jes-clique {
+    font-size: .1rem;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    z-index: 0;
+    color: white;
 }
 
 .jes-card-info {
@@ -766,6 +776,26 @@ strong {
 .jes-card:hover .jes-card-info {
     opacity: 1;
     visibility: visible;
+}
+
+@media screen and (max-width: 940px) {
+    .jes-texto {
+        padding-bottom: 3rem;
+    }
+
+    .jes-clique {
+        position: absolute;
+        top: 95%;
+        color: white;
+        background-color: #262626;
+        padding: .1rem .2rem;
+        opacity: 1;
+        z-index: 100;
+        font-size: 1rem;
+        font-family: var(--font-primary);
+        letter-spacing: 1px;
+    }
+
 }
 
 /*=================== PLANO DE LEITURA ===================*/
