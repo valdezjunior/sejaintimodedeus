@@ -5,33 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale conosco</title>
+    <link rel="stylesheet" href="faleconosco.css">
 </head>
 <body>
     <div class="container">
         <h1>Fale Conosco</h1>
         <p>Nos envie e-mail com dúvidas ou comentários que você tenha a respeito da vida e intimidade com Deus.</p>
 
-        <form action="#">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="195a5999-5308-489c-a62e-58af6a66b6ac">
+            <input type="hidden" name="redirectTo" value="https://valdezjunior.github.io/projetoestudandoapalavra2/">
+
+
             <div class="inplab-form">
-                <label for="">Seu nome</label>
                 <input type="text" name="name" class="input-dados" id="nome">
+                <label for="nome" class="label-dados">Seu nome</label>
             </div>
             <div class="inplab-form">
-                <label for="">Seu e-mail completo</label>
-                <input type="text" name="name" class="input-dados" id="nome">
+                <input type="text" name="e-mail" class="input-dados" id="email">
+                <label for="email" class="label-dados">Seu e-mail completo</label>
             </div>
             <div class="inplab-form">
-                <label for="">Confirme seu e-mail</label>
-                <input type="text" name="name" class="input-dados" id="nome">
+                <input type="text" name="email" class="input-dados" id="email">
+                <label for="email" class="label-dados">Confirme seu e-mail</label>
             </div>
 
             <div class="inplab-form">
-                <label for="">Sua dúvida/comentário</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="message" id="mensagem" class="input-dados"></textarea>
+                <label for="mensagem" class="label-dados">Sua dúvida/comentário</label>
             </div>
+
+            <button type="submit" class="btn">Enviar</button>
 
         </form>
 
+
     </div>
+
+    <footer>
+        <div class="footer-conteiner">
+                <div class="pagtop">
+                    <a href="index.html"><i class="fa-solid fa-caret-right"></i>Página Principal</a>
+                    <a href="index.html"><i class="fa-solid fa-caret-right"></i>Início</a>
+                    <a href="faleconosco.html"><i class="fa-solid fa-caret-right"></i>Fale conosco</a>
+                </div>
+            
+            <div class="lista-redes-sociais">
+                <ul>
+                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
 </body>
 </html>

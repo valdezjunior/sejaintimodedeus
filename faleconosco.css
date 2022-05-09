@@ -33,155 +33,115 @@ html {
 }
 
 
-
-/*=================== HEADER TITULO===================*/
-
-
-header {
-    margin: 0 auto;
-    max-width: 930px;
-    height: 330px;
-    position: relative;
-    overflow: hidden;
-    box-shadow: .3rem .3rem 1rem rgba(0, 0, 0, 0.2);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+body {
+    background-color: white;
 }
 
-
-/*=================== IMG e BANNER DO CABEÇALHO ===================*/
-
-
-.img-cabecalho {
-    max-width: 930px;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-.img-cabecalho img {
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    animation: animacao 12s;
-}
-
-@keyframes animacao {
-    0% {
-        transform: scale(1.3);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-.banner {
-    position: absolute;
-    top: 12%;
-    left: 5%;
-    right: 2%;
-}
-
-.banner h1 {
-    color: white;
-    font-size: 2.7rem;
-    font-family: var(--font-primary);
-    font-weight: lighter;
-    text-shadow: .2rem .23rem .18rem rgba(0, 0, 0, 0.7);
-    line-height: 3.5rem;
-    margin-bottom: 4rem;
-    animation: animacaoBanner 1.8s 0.5s forwards;
-    opacity: 0;
-}
-
-.banner p {
-    color: white;
-    font-family: var(--font-secundary);
-    font-size: 1.5rem;
-    text-shadow: .13rem .18rem .15rem rgba(0, 0, 0, 0.6);
-    margin-bottom: 3rem;
-    opacity: 0;
-    animation: animacaoBanner 2s 0.7s forwards;
-}
-
-
-@keyframes animacaoBanner {
-    0% {
-        transform: translateY(20rem) rotateY(-30deg);
-    }
-    100% {
-        transform: translateY(0) rotateY(0);
-        opacity: 1;
-    }
-}
-
-@media screen and (max-width: 660px) {
-    header {
-        height: 250px;
-    }
-
-    .banner {
-        position: absolute;
-        top: 8%;
-        left: 10%;
-    }
-    
-    .banner h1 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .banner p {
-        font-size: 1.2rem;
-        margin-bottom: 0;
-        
-    }
-}
-
-/*=================== MAIN ===================*/
-
-main {
+.container {
     min-width: 300px;
-    max-width: 890px;
-    background-color: rgba(255, 255, 255, 0.822);
-    margin: auto;
-    padding: 0 20px 20px 20px;
+    max-width: 800px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
     border-radius: 10px;
-    margin-bottom: 30px;
+    margin: auto;
+    background: #daf1f1;
+    background: -webkit-linear-gradient(to top, #e2e1e1, #daf1f1);
+    background: linear-gradient(to top, #e2e1e1, #daf1f1);
 }
 
-
-
-main h1 {
-    color: #fd8700;
+h1 {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    margin: 2rem;
     font-family: var(--font-primary);
-    font-weight: lighter;
-    font-size: 1.8rem;
-    margin-top: 1.5rem;
-    margin-bottom: 4rem;
-    text-align: center;
-    padding-top: 45px;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #E08722;
 }
 
-main p {
-    margin-bottom: 3rem;
+p {
     font-family: var(--font-secundary);
-    font-size: 1.4rem;
-    text-indent: 30px;
-    letter-spacing: .5px;
-    line-height: 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0 .5rem 2rem 2rem;
+    margin-left: 2rem;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inplab-form input {
+    font-size: 1.2rem;
+    width: 18rem;
+}
+
+.inplab-form {
+    position: relative;
+}
+
+.input-dados {
+    width: 15rem;
+    font-size: 1.2rem;
+    font-family: var(--font-secundary);
+    margin: 1.5rem 0 2.5rem 4rem;
+}
+
+.inplab-form textarea {
+    min-width: 18rem;
+    max-width: 21rem;
+    min-height: 1rem;
+    max-height: 7rem;
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+.label-dados {
+    position: absolute;
+    left: 4rem;
+    font-size: .8rem;
+    font-weight: bold;
+    font-family: var(--font-secundary);
+    text-transform: uppercase;
+}
+
+.btn {
+    width: 7rem;
+    margin-left: 4rem;
+    height: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid rgb(102, 101, 101);
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width: 750px) {
+    .inplab-form input {
+        font-size: 1.1rem;
+        width: 14rem;
+    }
+
+    .inplab-form textarea {
+        min-width: 13rem;
+        max-width: 14rem;
+        min-height: 1rem;
+        max-height: 5rem;
+        font-size: 1.1rem;
+        font-style: italic;
+    }
 }
 
 /*=================== FOOTER ===================*/
 
-
 footer {
     width: 100%;
     height: 7rem;
+    margin-top: 2rem;
     background-color: #6a6a6d;
     display: flex;
     justify-content: center;
@@ -236,7 +196,7 @@ footer {
 }
 
 .lista-redes-sociais i:hover {
-    color: #47484b;
+    color: #6a6a6d;
     background-color: rgb(197, 189, 189);
     transition: all .7s;
 }
@@ -244,22 +204,6 @@ footer {
 .lista-redes-sociais ul {
     display: flex;
 }
-
-#link-topo {
-    position: fixed;
-    right: 3rem;
-    bottom: 3rem;
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.3);
-}
-
-
 
 @media (max-width: 850px) {
 
@@ -338,5 +282,3 @@ footer {
         
     }
 }
-
-
