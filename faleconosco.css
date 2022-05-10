@@ -37,6 +37,7 @@ body {
     background-color: white;
 }
 
+
 .container {
     min-width: 300px;
     max-width: 800px;
@@ -66,6 +67,8 @@ p {
     margin-left: 2rem;
 }
 
+/*=================== FORMULÁRIO ===================*/
+
 form {
     width: 100%;
     display: flex;
@@ -81,12 +84,44 @@ form {
     position: relative;
 }
 
-.input-dados {
+.input-dad {
     width: 15rem;
     font-size: 1.2rem;
     font-family: var(--font-secundary);
     margin: 1.5rem 0 2.5rem 4rem;
 }
+
+ /* #email:invalid {
+    border-color: crimson;
+    box-shadow: 0px 0px 3px crimson;
+}
+
+#email:focus {
+    outline: none;
+}
+
+#email:focus:invalid {
+    box-shadow: none;
+}
+
+#emaill:invalid {
+    border-color: crimson;
+    box-shadow: 0px 0px 3px crimson;
+}
+
+#emaill:focus {
+    outline: none;
+}
+
+#emaill:focus:invalid {
+    box-shadow: none;
+}
+
+span {
+    color: crimson;
+} */
+
+
 
 .inplab-form textarea {
     min-width: 18rem;
@@ -97,7 +132,7 @@ form {
     font-style: italic;
 }
 
-.label-dados {
+.label-dad {
     position: absolute;
     left: 4rem;
     font-size: .8rem;
