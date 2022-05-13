@@ -359,7 +359,7 @@ button a:hover {
         width: 80vw;
         height: 4rem;
         top: 0rem;
-        left: 26%;
+        left: 31%;
         background-color: transparent;
     }
 
@@ -403,7 +403,7 @@ button a:hover {
         width: 80vw;
         height: 4rem;
         top: 0rem;
-        left: 27%;
+        left: 32%;
         background-color: transparent;
     }
 
@@ -483,7 +483,7 @@ button a:hover {
 @media screen and (min-width: 930px) and (max-width: 1200px) {
     .redes-sociais {
         width: 20%;
-        left: 72%;
+        left: 64%;
         bottom: .6rem;
         display: flex;
         justify-content: right;
@@ -513,7 +513,7 @@ button a:hover {
 @media screen and (min-width: 1201px) {
     .redes-sociais {
         width: 20%;
-        left: 72%;
+        left: 65%;
         bottom: .3rem;
         display: flex;
         justify-content: right;
