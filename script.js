@@ -7,7 +7,7 @@ hamburguer.addEventListener("click", function () {
 //////////////////////////////////////////////////////////////
 
 
-function dados() {
+/*function dados() {
 
     let email = document.getElementById('email');
     let texto = document.getElementById('mensagem');
@@ -19,7 +19,7 @@ function dados() {
         alert('Dados enviados!')
     }
 
-}
+}*/
 
 
 
