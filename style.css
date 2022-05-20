@@ -1132,7 +1132,7 @@ footer {
 }
 
 .lista-redes-sociais i {
-    color: #a7a7a7;
+    color: white;
     background-color: transparent;
     margin: 0 2rem;
     width: 2.5rem;
@@ -1146,8 +1146,8 @@ footer {
 }
 
 .lista-redes-sociais i:hover {
-    color: #e0e0e9;
-    background-color: rgb(151, 141, 141);
+    color: #2f746c;
+    background-color: white;
     transition: all .7s;
 }
 
