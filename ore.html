@@ -28,6 +28,32 @@
             background-color: darkblue;
         }
 
+        footer {
+            background: linear-gradient(-45deg, #110957, #242366, #5b5e9e,#8195c0);
+            background-size: 400% 400%;
+            animation: backgroundRodape 8s ease-in-out infinite;
+        }
+
+        @keyframes backgroundRodape {
+            0% {
+                background-position: 0% 80%; 
+            }
+
+            50% {
+                background-position: 80% 100%;
+            }
+
+            100% {
+                background-position: 0% 90%;
+            }
+        }
+
+        .lista-redes-sociais i:hover {
+            color: #5b5e9e;
+            background-color: white;
+            transition: all .7s;
+        }
+
         #link-topo {
             background: #373B44;
             background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);

@@ -12,6 +12,7 @@
             background-color: rgb(243, 227, 227);
         }
 
+
         .main-titulo{
             color: darkred;
         }
@@ -28,6 +29,32 @@
             background-color: darkred;
         }
         
+        footer {
+            background: linear-gradient(-45deg, #801004, #9c2f1e, #9e4d42,#ad6f6a);
+            background-size: 400% 400%;
+            animation: backgroundRodape 8s ease-in-out infinite;
+        }
+
+        @keyframes backgroundRodape {
+            0% {
+                background-position: 0% 80%; 
+            }
+
+            50% {
+                background-position: 80% 100%;
+            }
+
+            100% {
+                background-position: 0% 90%;
+            }
+        }
+
+        .lista-redes-sociais i:hover {
+            color: #c0473a;
+            background-color: white;
+            transition: all .7s;
+        }
+
         #link-topo {
             background: #8E0E00;
             background: -webkit-linear-gradient(to top, #1F1C18, #8E0E00);

@@ -9,8 +9,10 @@
 
     <style>
         body {
-            background-color: rgb(225, 243, 225);
+            background-color: rgb(208, 221, 208);
         }
+
+        
 
         .main-titulo {
             color: darkgreen;
@@ -28,11 +30,37 @@
             background-color: darkgreen;
         }
 
-    #link-topo {
-        background: #52c234;
-        background: -webkit-linear-gradient(to top, #061700, #52c234);
-        background: linear-gradient(to top, #061700, #52c234);
-    }
+        footer {
+            background: linear-gradient(-45deg, #0f3002, #245815, #5d924d,#5e8657);
+            background-size: 400% 400%;
+            animation: backgroundRodape 8s ease-in-out infinite;
+        }
+
+        @keyframes backgroundRodape {
+            0% {
+                background-position: 0% 80%; 
+            }
+
+            50% {
+                background-position: 80% 100%;
+            }
+
+            100% {
+                background-position: 0% 90%;
+            }
+        }
+
+        .lista-redes-sociais i:hover {
+            color: #5d924d;
+            background-color: white;
+            transition: all .7s;
+        }
+
+        #link-topo {
+            background: #52c234;
+            background: -webkit-linear-gradient(to top, #061700, #52c234);
+            background: linear-gradient(to top, #061700, #52c234);
+        }
 
 
     </style>
