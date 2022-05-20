@@ -456,8 +456,8 @@ button a:hover {
 .redes-sociais i {
     color: #fc4a1a;
     background-color: transparent;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.57rem;
+    height: 2.57rem;
     font-size: 1.9rem;
     display: flex;
     justify-content: center;
@@ -492,8 +492,8 @@ button a:hover {
     }
 
     .redes-sociais i {
-        width: 2.3rem;
-        height: 2.3rem;
+        width: 2.29rem;
+        height: 2.29rem;
         font-size: 1.7rem;
         margin-right: 1rem;
     }
@@ -523,7 +523,6 @@ button a:hover {
 
     .redes-sociais i {
 
-        font-size: 1.9rem;
         margin-right: 3rem;
     }
 
@@ -550,7 +549,11 @@ button a:hover {
 
 .section-palavra {
     margin: 0 auto;
+    background: linear-gradient(-45deg, rgb(88, 88, 88), rgb(189, 187, 187), rgba(123, 179, 201, 0.925),rgb(179, 200, 236));
+    background-size: 400% 400%;
+    animation: backgroundTransition 8s ease-in-out infinite;
 }
+
 
 .section-header {
     text-align: center;
@@ -614,6 +617,20 @@ strong {
     flex-wrap: wrap;
 }
 
+@keyframes backgroundTransition {
+    0% {
+        background-position: 0% 80%; 
+    }
+
+    50% {
+        background-position: 80% 100%;
+    }
+
+    100% {
+        background-position: 0% 90%;
+    }
+}
+
 @media screen and (min-width: 620px) and (max-width: 1012px) {
     .palavra-img {
         margin: 0 auto;
@@ -631,6 +648,9 @@ strong {
 
 .section-jes {
     width: 100%;
+    background: linear-gradient(-45deg, rgb(88, 88, 88), rgb(189, 187, 187), rgba(123, 179, 201, 0.925),rgb(179, 200, 236));
+    background-size: 400% 400%;
+    animation: transitionBackground 8s ease-in-out infinite;
 }
 
 .section-header-jes {
@@ -778,7 +798,23 @@ strong {
     visibility: visible;
 }
 
+
+@keyframes transitionBackground {
+    0% {
+        background-position: 0% 80%; 
+    }
+
+    50% {
+        background-position: 80% 100%;
+    }
+
+    100% {
+        background-position: 0% 90%;
+    }
+}
+
 @media screen and (max-width: 940px) {
+
     .jes-texto {
         padding-bottom: 3rem;
     }
@@ -801,7 +837,6 @@ strong {
 /*=================== PLANO DE LEITURA ===================*/
 
 .section-plano {
-    margin-top: 2rem;
     background: rgb(114, 59, 59);
     background: -webkit-linear-gradient(to left, #c0731c, rgb(114, 59, 59));
     background: linear-gradient(to left, #c0731c, rgb(114, 59, 59));
@@ -875,9 +910,9 @@ td, th {
 .section-orar {
     width: 100%;
     height: 100vh;
-    background: #daf1f1;
-    background: -webkit-linear-gradient(to top, #e2e1e1, #daf1f1);
-    background: linear-gradient(to top, #e2e1e1, #daf1f1);
+    background: linear-gradient(-45deg, rgb(88, 88, 88), rgb(189, 187, 187), rgba(123, 179, 201, 0.925),rgb(179, 200, 236));
+    background-size: 400% 400%;
+    animation: backgroundOrar 8s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -992,6 +1027,20 @@ textarea::placeholder {
     transition: all 0.5s;
 }
 
+@keyframes backgroundOrar {
+    0% {
+        background-position: 0% 80%; 
+    }
+
+    50% {
+        background-position: 80% 100%;
+    }
+
+    100% {
+        background-position: 0% 90%;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .pedido-oracao {
         width: 90%;
@@ -1041,7 +1090,9 @@ textarea::placeholder {
 footer {
     width: 100%;
     height: 7rem;
-    background-color: #6a6a6d;
+    background: linear-gradient(-45deg, #530878, #085078, #2f746c, #1b796f);
+    background-size: 400% 400%;
+    animation: backgroundRodape 8s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1095,8 +1146,8 @@ footer {
 }
 
 .lista-redes-sociais i:hover {
-    color: #6a6a6d;
-    background-color: rgb(197, 189, 189);
+    color: #e0e0e9;
+    background-color: rgb(151, 141, 141);
     transition: all .7s;
 }
 
@@ -1119,6 +1170,20 @@ footer {
     color: white;
     border-radius: 50%;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.3);
+}
+
+@keyframes backgroundRodape {
+    0% {
+        background-position: 0% 80%; 
+    }
+
+    50% {
+        background-position: 80% 100%;
+    }
+
+    100% {
+        background-position: 0% 90%;
+    }
 }
 
 
