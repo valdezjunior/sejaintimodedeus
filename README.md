@@ -1,2 +1,2 @@
 # projetoestudandoapalavra2
- Praticando sites sobre a palavra de Deus
+ Criando site próprio sobre a palavra de Deus.
