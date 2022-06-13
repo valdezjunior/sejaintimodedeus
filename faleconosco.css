@@ -175,12 +175,15 @@ span {
 
 footer {
     width: 100%;
-    height: 7rem;
+    height: 8.25rem;
     margin-top: 2rem;
     background-color: #6a6a6d;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #daf1f1;
+    background: -webkit-linear-gradient(to bottom, #e2e1e1, #daf1f1);
+    background: linear-gradient(to bottom, #e2e1e1, #daf1f1);
 }
 
 .footer-conteiner {
@@ -197,15 +200,15 @@ footer {
 .pagtop a {
     margin: 0 1rem 0 1rem;
     font-family: var(--font-secundary);
-    color: #ccc8c8;
+    color: #E08722;
     font-size: 1.2rem;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 
 .pagtop a:hover {
-    color: white;
+    color: #fd8700;
     text-decoration: underline;
     transition: all .7s;
 }
@@ -217,7 +220,7 @@ footer {
 }
 
 .lista-redes-sociais i {
-    color: #a7a7a7;
+    color: #E08722;
     background-color: transparent;
     margin: 0 2rem;
     width: 2.5rem;
@@ -231,8 +234,8 @@ footer {
 }
 
 .lista-redes-sociais i:hover {
-    color: #6a6a6d;
-    background-color: rgb(197, 189, 189);
+    color: white;
+    background-color: #fd8700;
     transition: all .7s;
 }
 
