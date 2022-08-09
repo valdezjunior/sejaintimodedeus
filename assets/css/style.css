@@ -456,8 +456,8 @@ button a:hover {
 .redes-sociais i {
     color: #fc4a1a;
     background-color: transparent;
-    width: 2.57rem;
-    height: 2.57rem;
+    width: 2.56rem;
+    height: 2.56rem;
     font-size: 1.9rem;
     display: flex;
     justify-content: center;
@@ -551,7 +551,7 @@ button a:hover {
     margin: 0 auto;
     background: linear-gradient(-45deg, rgb(88, 88, 88), rgb(189, 187, 187), rgba(123, 179, 201, 0.925),rgb(179, 200, 236));
     background-size: 400% 400%;
-    animation: backgroundTransition 8s ease-in-out infinite;
+    animation: backgroundTransition 10s ease-in-out infinite;
 }
 
 
@@ -650,7 +650,7 @@ strong {
     width: 100%;
     background: linear-gradient(-45deg, rgb(88, 88, 88), rgb(189, 187, 187), rgba(123, 179, 201, 0.925),rgb(179, 200, 236));
     background-size: 400% 400%;
-    animation: transitionBackground 8s ease-in-out infinite;
+    animation: transitionBackground 10s ease-in-out infinite;
 }
 
 .section-header-jes {
@@ -912,7 +912,7 @@ td, th {
     height: 100vh;
     background: linear-gradient(-45deg, rgb(88, 88, 88), rgb(189, 187, 187), rgba(123, 179, 201, 0.925),rgb(179, 200, 236));
     background-size: 400% 400%;
-    animation: backgroundOrar 8s ease-in-out infinite;
+    animation: backgroundOrar 10s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -930,7 +930,7 @@ td, th {
     width: 35%;
     background: 
     linear-gradient(rgba(15,15,15, 0.5), rgba(22,22,22, 0.2)),
-    url(imagens/pedido.jpg);
+    url(../imagens/pedido.jpg);
     background-size: cover;
     border-top-left-radius: 1.1rem;
     border-bottom-left-radius: 1.1rem;

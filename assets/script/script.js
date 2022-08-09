@@ -7,33 +7,25 @@ hamburguer.addEventListener("click", function () {
 //////////////////////////////////////////////////////////////
 
 
-/*function dados() {
+function dados() {
 
-    let email = document.getElementById('email');
-    let texto = document.getElementById('mensagem');
+    let nome = document.querySelector('#nome')
+    let email = document.querySelector('#email');
+    let validacaoEmail = document.querySelector('#email1');
+    let texto = document.querySelector('#mensagem');
 
 
-    if (email.value.length == 0 || texto.value.length == 0) {
-        alert('Preencha todos os campos!')
+
+    if (email.value.length == 0 || texto.value.length == 0 || nome.value.length == 0) {
+        alert('Preencha todos os campos!');
+
+    } else if (email.value.length !== validacaoEmail.value.length) {
+        alert('Os emails são diferentes.');
+
     } else {
         alert('Dados enviados!')
     }
-
-}*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
