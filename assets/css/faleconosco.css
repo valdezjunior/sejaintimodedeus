@@ -37,6 +37,26 @@ body {
     background-color: white;
 }
 
+#mudar-tema {
+    color: black;
+    background-color: #daf1f1;
+    margin-left: 75%;
+    margin-top: 30px;
+    width: 85px;
+    height: 23px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    font-family: var(--font-primary);
+    text-transform: uppercase;
+}
+
+#mudar-tema:hover {
+    letter-spacing: .5px;
+    background-color: white;
+}
+
 
 .container {
     min-width: 300px;
