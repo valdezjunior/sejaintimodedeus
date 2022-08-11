@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fale conosco</title>
     <link rel="stylesheet" href="./assets/css/faleconosco.css">
+    <link rel="stylesheet" href="./assets/css/components/intfaleconosco.css">
 </head>
 <body>
     <div class="container">
 
-        <button onclick="mudarTema()" id="mudar-tema">Mudar tema</button>
+        <div id="mudar-tema">
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <div class="ball"></div>
+            </label>
+          </div>
 
-        <h1>Fale Conosco</h1>
+        <h1 id="title">Fale Conosco</h1>
         <p>Nos envie e-mail com dúvidas ou comentários que você tenha a respeito da vida e intimidade com Deus.</p>
 
         <form action="https://api.staticforms.xyz/submit" method="post">

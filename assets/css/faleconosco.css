@@ -37,26 +37,6 @@ body {
     background-color: white;
 }
 
-#mudar-tema {
-    color: black;
-    background-color: #daf1f1;
-    margin-left: 75%;
-    margin-top: 30px;
-    width: 85px;
-    height: 23px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 11px;
-    font-family: var(--font-primary);
-    text-transform: uppercase;
-}
-
-#mudar-tema:hover {
-    letter-spacing: .5px;
-    background-color: white;
-}
-
 
 .container {
     min-width: 300px;
@@ -69,6 +49,13 @@ body {
     background: linear-gradient(to top, #e2e1e1, #daf1f1);
 }
 
+body.dark .container {
+    background: #292c35;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.116);
+}
+
+
+
 h1 {
     padding-left: 2rem;
     padding-top: 2rem;
@@ -79,6 +66,7 @@ h1 {
     color: #E08722;
 }
 
+
 p {
     font-family: var(--font-secundary);
     font-size: 1.1rem;
@@ -87,6 +75,11 @@ p {
     margin-left: 2rem;
 }
 
+body.dark p {
+    color: white;
+}
+
+
 /*=================== FORMULÁRIO ===================*/
 
 form {
@@ -94,6 +87,8 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+
 
 .inplab-form input {
     font-size: 1.2rem;
@@ -107,6 +102,8 @@ form {
 .input-dad {
     width: 15rem;
     font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 4px;
     font-family: var(--font-secundary);
     margin: 1.5rem 0 2.5rem 4rem;
 }
@@ -161,6 +158,10 @@ span {
     text-transform: uppercase;
 }
 
+body.dark .label-dad {
+    color: white;
+}
+
 .btn {
     width: 7rem;
     margin-left: 4rem;
@@ -198,12 +199,18 @@ footer {
     height: 8.25rem;
     margin-top: 2rem;
     background-color: #6a6a6d;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
     display: flex;
     justify-content: center;
     align-items: center;
     background: #daf1f1;
     background: -webkit-linear-gradient(to bottom, #e2e1e1, #daf1f1);
     background: linear-gradient(to bottom, #e2e1e1, #daf1f1);
+}
+
+body.dark footer {
+    background: #292c35;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.116);
 }
 
 .footer-conteiner {
@@ -257,6 +264,10 @@ footer {
     color: white;
     background-color: #fd8700;
     transition: all .7s;
+}
+
+body.dark .lista-redes-sociais i:hover {
+    color: #292c35;
 }
 
 .lista-redes-sociais ul {
