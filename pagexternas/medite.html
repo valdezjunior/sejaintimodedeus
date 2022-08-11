@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medite na palavra do Senhor</title>
-    <link rel="stylesheet" href="./assets/css/style-medite.css">
-    <link rel="stylesheet" href="./assets/css/components/pagexternas.css">
+    <link rel="stylesheet" href="../assets/css/style-medite.css">
 
     <style>
         body {
@@ -15,6 +14,10 @@
 
         .main-titulo {
             color: darkgreen;
+        }
+
+        body.dark .main-titulo {
+            color: #5d924d;
         }
 
         .main-titulo::before {
@@ -27,6 +30,10 @@
 
         article:nth-of-type(3n+1) .main-titulo::before {
             background-color: darkgreen;
+        }
+
+        body.dark article:nth-of-type(3n+1) .main-titulo::before {
+            background-color: #5d924d;
         }
 
         footer {
@@ -91,7 +98,7 @@
             
             <div class="img-cabecalho">
                 
-                <img src="./assets/imagens/leitura.jpg" alt="Imagem Biblia">
+                <img src="../assets/imagens/leitura.jpg" alt="Imagem Biblia">
                 
             </div>
             
@@ -138,7 +145,7 @@
                     <div class="pagtop">
                         <a href="index.html"><i class="fa-solid fa-caret-right"></i>Página Principal</a>
                         
-                        <a href="faleconosco.html"><i class="fa-solid fa-caret-right"></i>Fale conosco</a>
+                        <a href="../pagexternas/faleconosco.html"><i class="fa-solid fa-caret-right"></i>Fale conosco</a>
                     </div>
                 
                     <div class="lista-redes-sociais">
@@ -172,6 +179,6 @@
 
     </div>
 </body>
-<script src="./assets/script/faleconosco.js"></script>
+<script src="../assets/script/faleconosco.js"></script>
 
 </html>

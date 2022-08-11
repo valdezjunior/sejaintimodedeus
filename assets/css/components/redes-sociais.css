@@ -1,0 +1,98 @@
+.redes-sociais {
+    position: absolute;
+    width: 100%;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes-sociais i {
+    color: #fc4a1a;
+    background-color: transparent;
+    width: 2.56rem;
+    height: 2.56rem;
+    font-size: 1.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 1s;
+}
+
+.redes-sociais i:hover {
+    color: white;
+    background-color: #fc4a1a;
+    transition: all 2s;
+}
+
+@media screen and (max-width: 550px) {
+    .redes-sociais i {
+        width: 2.6rem;
+        height: 2.6rem;
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (min-width: 930px) and (max-width: 1200px) {
+    .redes-sociais {
+        width: 20%;
+        left: 64%;
+        bottom: .6rem;
+        display: flex;
+        justify-content: right;
+        animation: animacaoRedeS 2s 0.9s forwards;
+        opacity: 0;
+    }
+
+    .redes-sociais i {
+        width: 2.29rem;
+        height: 2.29rem;
+        font-size: 1.7rem;
+        margin-right: 1rem;
+    }
+
+    @keyframes animacaoRedeS {
+        0% {
+            transform: translateX(-10rem) rotateX(-30deg);
+        }
+    
+        100% {
+            transform: translateX(0) rotateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .redes-sociais {
+        width: 20%;
+        left: 65%;
+        bottom: .3rem;
+        display: flex;
+        justify-content: right;
+        animation: animacaoRedeS 2s 0.9s forwards;
+        opacity: 0;
+    }
+
+    .redes-sociais i {
+
+        margin-right: 3rem;
+    }
+
+    @keyframes animacaoRedeS {
+        0% {
+            transform: translateX(-10rem) rotateX(-30deg);
+        }
+    
+        100% {
+            transform: translateX(0) rotateX(0);
+            opacity: 1;
+        }
+    }
+
+    .redes-sociais i:hover {
+        color: white;
+        background-color: #fc4a1a;
+        transition: all 2s;
+    }
+}

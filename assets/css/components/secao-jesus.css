@@ -1,0 +1,188 @@
+.section-jes {
+    width: 100%;
+    /*background: linear-gradient(-45deg, rgb(88, 88, 88), rgb(189, 187, 187), rgba(123, 179, 201, 0.925),rgb(179, 200, 236));
+    background-size: 400% 400%;*/
+    background: rgba(255, 238, 230, 0.801);
+    animation: transitionBackground 10s ease-in-out infinite;
+}
+
+.section-header-jes {
+    margin-bottom: 2rem;
+}
+
+
+.jes-texto {
+    position: relative;
+    max-width: 75%;
+    margin: auto;
+    line-height: 1.5rem;
+    letter-spacing: .5px;
+    font-family: var(--font-secundary);
+    font-size: 1.4rem;
+}
+
+.jes-bloco {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.jes-card {
+    width: 15rem;
+    height: 22rem;
+    position: relative;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: 0.1rem 0.1rem .5rem rgba(0, 0, 0, 0.6);
+}
+
+.jes-card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    background-color: #262626;
+}
+
+.jes-card-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    opacity: .8;
+    transition: opacity .5s;
+}
+
+.jes-card:hover .jes-card-img img {
+    opacity: .5;
+}
+
+.jes-clique {
+    font-size: .1rem;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    z-index: 0;
+    color: white;
+}
+
+.jes-card-info {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem 1rem 2.5rem 1rem;
+    text-shadow: .2rem .3rem .3rem rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.3s;
+}
+
+.jes-card-info h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: var(--font-primary);
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.jes-card-info .jes-titulo1 {
+    color: rgb(43, 180, 43);
+}
+
+.jes-card-info .jes-titulo2 {
+    color: rgb(90, 124, 236);
+}
+
+.jes-card-info .jes-titulo3 {
+    color: rgb(207, 27, 27);
+}
+
+.jes-card-info p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: var(--font-secundary);
+    color: rgba(255, 255, 255, 0.925);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 10px;
+    padding: .8rem 1.3rem;
+    font-family: var(--font-action);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .75rem;
+    color: white;
+    box-shadow: 0 0.1rem .8rem rgba(0, 0, 0, 0.8);
+    text-shadow: .1rem .1rem .15rem rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    background: #fc4a1a;
+    background: -webkit-linear-gradient(to left, #f7b733, #fc4a1a);
+    background: linear-gradient(to left, #f7b733, #fc4a1a);
+}
+
+.btn1 {
+    background: #52c234;
+    background: -webkit-linear-gradient(to right, #061700, #52c234);
+    background: linear-gradient(to right, #061700, #52c234);
+}
+
+.btn2 {
+    background: #373B44;
+    background: -webkit-linear-gradient(to left, #4286f4, #373B44);
+    background: linear-gradient(to left, #4286f4, #373B44);
+}
+
+.btn3 {
+    background: #8E0E00;
+    background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);
+    background: linear-gradient(to right, #1F1C18, #8E0E00);
+}
+
+.jes-card-info button {
+    width: 8rem;
+    height: 2.5rem;
+}
+
+
+
+.jes-card:hover .jes-card-info {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@keyframes transitionBackground {
+    0% {
+        background-position: 0% 80%; 
+    }
+
+    50% {
+        background-position: 80% 100%;
+    }
+
+    100% {
+        background-position: 0% 90%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+
+    .jes-texto {
+        padding-bottom: 3rem;
+    }
+
+    .jes-clique {
+        position: absolute;
+        top: 95%;
+        color: white;
+        background-color: #262626;
+        padding: .1rem .2rem;
+        opacity: 1;
+        z-index: 100;
+        font-size: 1rem;
+        font-family: var(--font-primary);
+        letter-spacing: 1px;
+    }
+
+}

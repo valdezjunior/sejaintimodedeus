@@ -1,0 +1,111 @@
+.hamburguer {
+    position: fixed;
+    width: 1.7rem;
+    height: 1.7rem;
+    z-index: 100;
+    top: 2.2rem;
+    right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    cursor: pointer;
+    animation: animacaoH 2s 0.9s forwards;
+    opacity: 0;
+}
+
+.show-menu .hamburguer {
+    right: 11rem;
+}
+
+.linha {
+    width: 100%;
+    height: .1rem;
+    background-color: white;
+    box-shadow: 0.08rem 0.1rem 1px rgba(0, 0, 0, 0.9);
+    transition: transform 1s;
+}
+
+.show-menu #linha1 {
+    width: 80%;
+    transform: rotate(45deg) translate(.2rem, .2rem);
+}
+
+.show-menu #linha2 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #linha3 {
+    width: 80%;
+    transform: rotate(-45deg) translate(.2rem, -.43rem);
+}
+
+.hamburguer span {
+    position: absolute;
+    left: 3rem;
+    background-color: #fc4a1a;
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-action);
+    opacity: 0;
+}
+
+.hamburguer span::before {
+    content: "";
+    position: absolute;
+    border-right: .5rem solid #fc4a1a;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    border-top: .5rem solid transparent;
+    left: -1rem;
+}
+
+.show-menu .hamburguer:hover span {
+    opacity: 1;
+}
+
+@keyframes animacaoH {
+    0% {
+        transform: translateZ(-10rem) rotateZ(-180deg);
+    }
+
+    100% {
+        transform: translateZ(0) rotateZ(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hamburguer {
+        width: 1.7rem;
+        height: 1.7rem;
+        top: 2rem;
+    }
+
+    .show-menu .hamburguer {
+        right: 8rem;
+    }
+
+    .show-menu #linha1 {
+        width: 80%;
+        transform: rotate(45deg) translate(.2rem, .2rem); 
+    }
+}
+
+
+@media screen and (min-width: 930px){
+    .hamburguer {
+        z-index: 0;
+        opacity: 0;
+    }
+
+    @keyframes animacaoH {
+        100% {
+            opacity: 0;
+        }
+    }
+}
