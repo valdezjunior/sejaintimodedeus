@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orai sem cessar</title>
     <link rel="stylesheet" href="./assets/css/style-medite.css">
+    <link rel="stylesheet" href="./assets/css/components/pagexternas.css">
 
     <style>
         body {
@@ -13,7 +14,11 @@
         }
 
         .main-titulo{
-            color: darkblue;
+            color: rgba(37, 37, 175, 0.87);
+        }
+
+        body.dark .main-titulo {
+            color: #8195c0;
         }
 
         .main-titulo::before {
@@ -25,7 +30,11 @@
         }
 
         article:nth-of-type(3n+1) .main-titulo::before {
-            background-color: darkblue;
+            background-color: rgba(37, 37, 175, 0.87);
+        }
+
+        body.dark article:nth-of-type(3n+1) .main-titulo::before {
+            background-color: #8195c0;
         }
 
         footer {
@@ -49,9 +58,22 @@
         }
 
         .lista-redes-sociais i:hover {
-            color: #5b5e9e;
+            color: #8195c0;
             background-color: white;
             transition: all .7s;
+        }
+
+        body.dark .lista-redes-sociais i:hover {
+            color: white;
+            background-color:#8195c0;
+        }
+
+        body.dark .lista-redes-sociais i {
+            color: #8195c0;
+        }
+
+        body.dark .pagtop a {
+            color: #8195c0;
         }
 
         #link-topo {
@@ -84,6 +106,12 @@
         </header>
 
         <main>
+            <div id="mudar-tema">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <div class="ball"></div>
+                </label>
+              </div>
             <article>
                 <h1 class="main-titulo">A oração é o segredo do Cristão.</h1>
 
@@ -144,4 +172,7 @@
 
     </div>
 </body>
+
+<script src="./assets/script/faleconosco.js"></script>
+
 </html>

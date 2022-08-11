@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medite na palavra do Senhor</title>
     <link rel="stylesheet" href="./assets/css/style-medite.css">
+    <link rel="stylesheet" href="./assets/css/components/pagexternas.css">
 
     <style>
         body {
             background-color: rgba(208, 221, 208, 0.562);
         }
-
-        
 
         .main-titulo {
             color: darkgreen;
@@ -56,11 +55,28 @@
             transition: all .7s;
         }
 
+        body.dark .lista-redes-sociais i:hover {
+            color: white;
+            background-color: #5d924d;
+        }
+
+        body.dark .lista-redes-sociais i {
+            color: #5d924d;
+        }
+
+        body.dark .pagtop a {
+            color: #5d924d;
+        }
+
+
         #link-topo {
             background: #52c234;
             background: -webkit-linear-gradient(to top, #061700, #52c234);
             background: linear-gradient(to top, #061700, #52c234);
         }
+
+        
+
 
 
     </style>
@@ -70,13 +86,15 @@
 <body>
     <div class="container">
 
+        
         <header class="cabecalho">
-
+            
             <div class="img-cabecalho">
-
+                
                 <img src="./assets/imagens/leitura.jpg" alt="Imagem Biblia">
-
+                
             </div>
+            
 
             <div class="banner">
                 <h1>Josué 1:8</h1>
@@ -86,7 +104,14 @@
             
         </header>
 
+        
         <main>
+            <div id="mudar-tema">
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <div class="ball"></div>
+                </label>
+              </div>
             <article>
                 <h1 class="main-titulo">Porque precisamos ter a prática da leitura em nossa vida?</h1>
                 <p>
@@ -147,4 +172,6 @@
 
     </div>
 </body>
+<script src="./assets/script/faleconosco.js"></script>
+
 </html>

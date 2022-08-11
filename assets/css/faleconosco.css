@@ -167,13 +167,20 @@ body.dark .label-dad {
     margin-left: 4rem;
     height: 2rem;
     font-size: 1rem;
+    font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 3rem;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid rgb(102, 101, 101);
+    border: 1px solid #E08722;
     cursor: pointer;
     letter-spacing: 1px;
+    color: #E08722;
+}
+
+.btn:hover {
+    letter-spacing: 2px;
+    transition: .5s;
 }
 
 @media screen and (max-width: 750px) {
