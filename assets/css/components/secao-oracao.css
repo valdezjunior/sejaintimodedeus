@@ -156,16 +156,16 @@ textarea::placeholder {
     }
 
     .pedido-left {
-        width: 40%;
+        width: 30%;
     }
 
     .pedido-right {
-        width: 60%;
+        width: 70%;
     }
 
     .pedido-right h1 {
         line-height: 3.2rem;
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
 
     .btn-submit {
@@ -177,6 +177,6 @@ textarea::placeholder {
 
 @media screen and (min-width: 751px) and (max-width: 1050px) {
     .pedido-oracao {
-        width: 90%;
+        width: 95%;
     }
 }
