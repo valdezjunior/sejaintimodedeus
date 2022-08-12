@@ -11,6 +11,7 @@
 }
 
 
+
 .show-menu .barra-lateral {
     right: 0;
 }
@@ -48,6 +49,11 @@
         height: 70vh;
     }
 
+    body.dark .barra-lateral {
+        background-color: #292c35;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    }
+
     .menu-item {
         margin-bottom: .5rem;
     }
@@ -57,6 +63,13 @@
     }
 }
 
+@media screen and (min-width: 551px) and (max-width: 929px) {
+
+    body.dark .barra-lateral {
+        background-color: #292c35;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    }
+}
 
 @media screen and (min-width: 930px) and (max-width: 1200px){
     .barra-lateral {

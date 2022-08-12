@@ -13,6 +13,7 @@
     opacity: 0;
 }
 
+
 .show-menu .hamburguer {
     right: 11rem;
 }
@@ -25,20 +26,26 @@
     transition: transform 1s;
 }
 
+
 .show-menu #linha1 {
     width: 80%;
-    transform: rotate(45deg) translate(.2rem, .2rem);
+    transform: rotate(45deg) translate(.22rem, .27rem);
 }
+
 
 .show-menu #linha2 {
     opacity: 0;
     visibility: hidden;
 }
 
+
+
 .show-menu #linha3 {
     width: 80%;
-    transform: rotate(-45deg) translate(.2rem, -.43rem);
+    transform: rotate(-45deg) translate(.18rem, -.43rem);
 }
+
+
 
 .hamburguer span {
     position: absolute;
@@ -92,7 +99,20 @@
 
     .show-menu #linha1 {
         width: 80%;
-        transform: rotate(45deg) translate(.2rem, .2rem); 
+        transform: rotate(45deg) translate(.2rem, .1rem);
+    }
+    
+    
+    .show-menu #linha2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    
+    
+    .show-menu #linha3 {
+        width: 80%;
+        transform: rotate(-45deg) translate(.35rem, -.44rem);
     }
 }
 

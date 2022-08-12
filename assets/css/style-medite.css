@@ -51,9 +51,6 @@ header {
     border-bottom-right-radius: 10px;
 }
 
-body.dark header {
-    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.116);
-}
 
 
 /*=================== IMG e BANNER DO CABEÇALHO ===================*/
@@ -163,7 +160,6 @@ main {
 
 body.dark main {
     background: #292c35;
-    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.116);
 }
 
 
@@ -201,11 +197,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
 }
 
 body.dark footer {
     background: #292c35;
-    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.116);
 }
 
 .footer-conteiner {

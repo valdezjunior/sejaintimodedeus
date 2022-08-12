@@ -6,6 +6,12 @@
     animation: transitionBackground 10s ease-in-out infinite;
 }
 
+body.dark .section-jes {
+    background: #292c35;
+    color: lightcyan;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
 .section-header-jes {
     margin-bottom: 2rem;
 }
@@ -15,7 +21,7 @@
     position: relative;
     max-width: 75%;
     margin: auto;
-    line-height: 1.5rem;
+    line-height: 2rem;
     letter-spacing: .5px;
     font-family: var(--font-secundary);
     font-size: 1.4rem;

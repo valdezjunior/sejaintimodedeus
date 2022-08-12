@@ -18,6 +18,14 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
 
 
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
 :root {
     --cor5: #fd8700;
     --cor4: #E08722;
@@ -45,8 +53,76 @@ html {
 }
 
 
+/*============== INTERAÇÃO MODO ESCURO ==============*/
+
 body {
     background-color: white;
+    height: 100vh;
+    margin: 0;
+    transition: background 0.2s linear;
+}
+
+
+body.dark {
+  background: #292c35;
+}
+
+
+#mudar-tema {
+    margin-left: 9%;
+    padding-top: 8px;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #37383b;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 5px;
+  position: relative;
+  height: 15px;
+  width: 30px;
+  transform: scale(1.5);
+
+}
+
+body.dark .label {
+    background-color: rgb(245, 245, 204);
+}
+
+
+.label .ball {
+  background-color: rgb(245, 245, 204);
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 11px;
+  width: 11px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+body.dark .ball {
+    background-color: #37383b;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(15px);
+}
+
+@media screen and (min-width: 930px) and (max-width: 990px) {
+    #mudar-tema {
+        margin-left: 4%;
+    }
 }
 
 /*=================== HEADER TITULO===================*/
@@ -109,12 +185,18 @@ body {
 footer {
     width: 100%;
     height: 7rem;
-    background: linear-gradient(-45deg, #530878, #085078, #2f746c, #1b796f);
-    background-size: 400% 400%;
+    /*background: linear-gradient(-45deg, #530878, #085078, #2f746c, #1b796f);
+    background-size: 400% 400%;*/
+    background: #c04422;
     animation: backgroundRodape 8s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+}
+
+body.dark footer {
+    background: #292c35;
 }
 
 .footer-conteiner {
@@ -131,15 +213,19 @@ footer {
 .pagtop a {
     margin: 0 1rem 0 1rem;
     font-family: var(--font-secundary);
-    color: #ccc8c8;
+    color: white;
     font-size: 1.2rem;
     text-transform: uppercase;
     font-weight: 500;
 }
 
+body.dark .pagtop a {
+    color: lightcyan;
+}
+
 
 .pagtop a:hover {
-    color: white;
+    color: black;
     text-decoration: underline;
     transition: all .7s;
 }
@@ -164,10 +250,19 @@ footer {
     transition: background-color 1s;
 }
 
+body.dark .lista-redes-sociais i {
+    color: lightcyan;
+}
+
 .lista-redes-sociais i:hover {
-    color: #2f746c;
+    color: #c04422;
     background-color: white;
     transition: all .7s;
+}
+
+body.dark .lista-redes-sociais i:hover {
+    color: #c04422;
+    background-color: white;
 }
 
 .lista-redes-sociais ul {
