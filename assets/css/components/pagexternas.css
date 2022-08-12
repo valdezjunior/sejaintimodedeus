@@ -32,7 +32,7 @@ body.dark {
 }
 
 .label {
-  background-color: #111;
+  background-color: #37383b;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -41,25 +41,32 @@ body.dark {
 
   padding: 5px;
   position: relative;
-  height: 20px;
-  width: 40px;
+  height: 15px;
+  width: 30px;
   transform: scale(1.5);
-
 }
 
 
+body.dark .label {
+  background-color: rgb(245, 245, 204);
+}
+
 .label .ball {
-  background-color: #fff;
+  background-color: rgb(245, 245, 204);
   border-radius: 50%;
   position: absolute;
   top: 2px;
   left: 2px;
-  height: 16px;
-  width: 16px;
+  height: 11px;
+  width: 11px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
 }
 
+body.dark .ball {
+  background-color: #37383b;
+}
+
 .checkbox:checked + .label .ball {
-  transform: translateX(20px);
+  transform: translateX(15px);
 }
