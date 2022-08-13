@@ -189,6 +189,12 @@ body.dark .section-jes {
         font-size: 1rem;
         font-family: var(--font-primary);
         letter-spacing: 1px;
+        border-radius: 8px;
+    }
+
+    body.dark .jes-clique {
+        color: #262626;
+        background-color: white;
     }
 
 }
