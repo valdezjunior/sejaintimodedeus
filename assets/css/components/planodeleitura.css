@@ -53,7 +53,7 @@ caption {
     font-family: var(--font-secundary);
     font-size: 1.8rem;
     font-weight: bold;
-    color: white;
+    color: lightcyan;
     text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, 0.4);
 }
 
@@ -74,7 +74,7 @@ td, th {
     }
 
     .section-header-plano {
-        color: white;
+        color: lightcyan;
     }
 
     #container {

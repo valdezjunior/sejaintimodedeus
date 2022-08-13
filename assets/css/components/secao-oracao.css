@@ -117,6 +117,7 @@ textarea::placeholder {
     letter-spacing: .2rem;
     margin-top: 2rem;
     box-shadow: 0 0.1rem 0.6rem rgba(0, 0, 0, 0.4);
+    color: lightcyan;
 }
 
 .btn-submit:hover {
