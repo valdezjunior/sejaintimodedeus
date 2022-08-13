@@ -28,14 +28,6 @@ body.dark .section-palavra {
     align-items: center;
 }
 
-.palavra-texto {
-    font-size: 1.4rem;
-    margin-top: 2.5rem;
-    font-family: var(--font-secundary);
-    flex: 6 1 160px;
-    text-align: center;
-    line-height: 2rem;
-}
 
 .section-subtitulo {
     display: flex;
