@@ -172,7 +172,7 @@ body.dark .section-jes {
     }
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 929px) {
 
     .jes-texto {
         padding-bottom: 3rem;
@@ -185,7 +185,7 @@ body.dark .section-jes {
         background-color: #262626;
         padding: .1rem .2rem;
         opacity: 1;
-        z-index: 100;
+        z-index: 1;
         font-size: 1rem;
         font-family: var(--font-primary);
         letter-spacing: 1px;
